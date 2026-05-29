@@ -1,24 +1,12 @@
-# Base de Datos
+# Base de Datos - Gestión
 
-## 1. Configuración del Sistema
-* **Motor de BBDD:** [Ej: MySQL, MariaDB, PostgreSQL]
-* **Versión:** [Ej: 8.0, 10.6, 14.x]
-* **Puerto:** [Ej: 3306, 5432]
+## 1. Motor seleccionado
+* **Sistema:** MySQL 8.0
+* **Puerto:** 3306
 
-CAMBIO
+## 2. Estrategia de acceso
+* **Root:** Acceso restringido solo desde `localhost`.
+* **Usuario App:** Usuario con permisos limitados a la base de datos específica.
 
-## 2. Configuración Inicial
-1. Instalación: `sudo apt install [nombre-paquete]`
-2. Asegurar instalación: `sudo mysql_secure_installation`
-3. Creación de usuario y base de datos:
-   - `CREATE DATABASE nombre_db;`
-   - `CREATE USER 'usuario'@'localhost' IDENTIFIED BY 'password';`
-   - `GRANT ALL PRIVILEGES ON nombre_db.* TO 'usuario'@'localhost';`
-
-## 3. Mantenimiento
-* **Ruta de logs:** `/var/log/mysql/error.log`
-* **Comando de reinicio:** `sudo systemctl restart [nombre-servicio]`
-
-## 4. Estructura de tablas
-* [Tabla 1]: [Breve descripción de los campos]
-* [Tabla 2]: [Breve descripción de los campos]
+## 3. Optimización
+* **Índices:** Se han añadido índices en las columnas de búsqueda frecuente para mejorar la latencia.
