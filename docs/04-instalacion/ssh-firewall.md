@@ -17,3 +17,5 @@
 ## 3. Seguridad Adicional
 * **Monitorización de intentos de acceso:** `sudo tail -f /var/log/auth.log`
 * **Herramienta sugerida:** Fail2Ban (para banear IPs con intentos fallidos de conexión).
+
+Revisado y completado
