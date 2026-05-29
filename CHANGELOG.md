@@ -5,3 +5,5 @@
 * Estructura inicial del proyecto.
 * Documentación de Análisis, Diseño y Planificación.
 * Configuración básica de Servidor Web y BBDD.
+
+Changelog actualizado
