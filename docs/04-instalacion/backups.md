@@ -5,6 +5,7 @@
 * **Tipo:** [Ej: Incremental]
 * **Destino:** [Ej: Servidor remoto / Nube / Disco externo]
 
+Cambio
 ## 2. Scripts y Automatización
 * **Script de backup:** `/scripts/backup.sh`
 * **Programación (Cron):** `0 2 * * * /scripts/backup.sh`
