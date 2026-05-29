@@ -17,3 +17,9 @@
 ## 3. Seguridad Adicional
 * **Monitorización de intentos de acceso:** `sudo tail -f /var/log/auth.log`
 * **Herramienta sugerida:** Fail2Ban (para banear IPs con intentos fallidos de conexión).
+
+## Configuración de firewall con UFW
+- `ufw default deny incoming`
+- `ufw allow 22/tcp`   # SSH para administración
+- `ufw allow 80,443/tcp`  # Web
+- `ufw enable`
