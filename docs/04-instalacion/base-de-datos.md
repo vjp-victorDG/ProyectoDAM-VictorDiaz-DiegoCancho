@@ -5,6 +5,8 @@
 * **Versión:** [Ej: 8.0, 10.6, 14.x]
 * **Puerto:** [Ej: 3306, 5432]
 
+CAMBIO
+
 ## 2. Configuración Inicial
 1. Instalación: `sudo apt install [nombre-paquete]`
 2. Asegurar instalación: `sudo mysql_secure_installation`
