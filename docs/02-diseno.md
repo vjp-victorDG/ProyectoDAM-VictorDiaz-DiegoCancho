@@ -1,7 +1,7 @@
 # 02 - Diseño del Sistema
 
 ## 1. Arquitectura
-* **Tipo:** [Ej: Cliente-Servidor / Monolito / Microservicios]
+* **Tipo:** [Ej: Cliente-Servidor / Monolito / Microservicios/ Cambio Diego]
 * **Componentes principales:** 
     * [Ej: Servidor Web (Nginx/Apache)]
     * [Ej: Base de datos (MySQL/PostgreSQL)]
