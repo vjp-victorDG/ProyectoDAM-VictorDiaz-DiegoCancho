@@ -1,10 +1,7 @@
-# Guía de Operación y Mantenimiento Diario
-
-## 1. Checklist Diario
-* [ ] Verificar que los servicios Nginx y MySQL estén activos (`systemctl status`).
-* [ ] Revisar logs de errores en `/var/log/nginx/error.log`.
-* [ ] Verificar espacio en disco restante: `df -h`.
-
-## 2. Mantenimiento Preventivo
-* **Semanal:** Actualización de repositorios y paquetes: `sudo apt update && sudo apt upgrade -y`.
-* **Mensual:** Limpieza de logs antiguos y optimización de tablas BBDD.
+#### `05-operacion.md` (Operación con balanceo) 
+```markdown 
+# 05 - Operación en entorno balanceado 
+## 1. Gestión de nodos 
+* **Mantenimiento:** Para actualizar un servidor web, se debe quitar del `upstream` temporalmente para no impactar al usuario. 
+* **Verificación:** `curl -I localhost` para confirmar que el balanceador responde correctamente. 
+## 2. Monitorización específica * Es necesario monitorizar el balanceador (puerto 80) y cada nodo web de forma independiente para detectar si alguno se ha caído.  

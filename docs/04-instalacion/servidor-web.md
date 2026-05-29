@@ -1,13 +1,16 @@
-# Servidor Web - Configuración Técnica
+# Configuración de Balanceador de Carga (Nginx)
 
-## 1. Stack Tecnológico
-* **Servidor:** Nginx (Recomendado por su alto rendimiento).
-* **Entorno:** Ubuntu 22.04 LTS.
+## 1. Bloque Upstream
+En el archivo `/etc/nginx/nginx.conf`, definimos los servidores web:
+```nginx
+upstream mi_proyecto {
+    server 192.168.1.10; # Servidor Web 01
+    server 192.168.1.11; # Servidor Web 02
+}
 
-## 2. Configuración del Virtual Host
-* **Ruta de configuración:** `/etc/nginx/sites-available/proyecto`
-* **Directiva clave:** `listen 80; server_name midominio.com;`
-
-## 3. Optimización y Seguridad
-* **SSL/TLS:** Configurado mediante Let's Encrypt (Certbot).
-* **Compresión:** Gzip activado para reducir tiempos de carga.
+server {
+    listen 80;
+    location / {
+        proxy_pass http://mi_proyecto;
+    }
+}
